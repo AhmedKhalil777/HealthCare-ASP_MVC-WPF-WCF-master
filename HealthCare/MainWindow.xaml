@@ -1,0 +1,31 @@
+﻿<Window x:Class="HealthCare.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthCare"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}">
+        <Button x:Name="ButtAhmed" Content="AHMED KHALIL&#xD;&#xA;&#xD;&#xA;     CREATE" HorizontalAlignment="Left" Margin="145,55,0,0" VerticalAlignment="Top" Width="244" Height="150" Foreground="#FFE21919" Panel.ZIndex="1" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="20" FontFamily="Oswald" Click="AhmedClick"/>
+        <Button x:Name="ButtZahra" Content="AHMED ABU ZAHRAH&#xD;&#xA; &#xD;&#xA;       READ" HorizontalAlignment="Left" Margin="394,55,0,0" VerticalAlignment="Top" Width="244" Height="150" Foreground="#FFE21919" Panel.ZIndex="1" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Oswald" FontSize="20" Click="Button_Click_1"/>
+        <Button x:Name="ButtIslam" Content="ISLAM KHATER&#xD;&#xA;&#xD;&#xA;   UPDATE" HorizontalAlignment="Left" Margin="145,210,0,0" VerticalAlignment="Top" Width="244" Height="150" Foreground="#FFE21919" Panel.ZIndex="1" Click="Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Oswald" FontSize="20"/>
+        <Button x:Name="ButtRana" Content="RANA HESHAM&#xD;&#xA;&#xD;&#xA;DELETE" HorizontalAlignment="Left" Margin="394,210,0,0" VerticalAlignment="Top" Width="244" Height="150" Foreground="#FFE21919" Panel.ZIndex="1" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Oswald" FontSize="20" Click="ButtRana_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="357" Margin="63,24,0,0" Stroke="Black" VerticalAlignment="Top" Width="671" RenderTransformOrigin="0.5,0.5" RadiusX="180" RadiusY="180">
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFD02914"/>
+                    <GradientStop Color="#FF2B110D" Offset="0.96"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+    </Grid>
+</Window>
